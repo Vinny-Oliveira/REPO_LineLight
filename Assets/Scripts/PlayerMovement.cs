@@ -5,16 +5,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float fltSpeed;
+    public Rigidbody rbPlayer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    //// Start is called before the first frame update
+    //void Start()
+    //{
         
-    }
+    //}
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal") * fltSpeed, 0, Input.GetAxis("Vertical") * fltSpeed);
+        //transform.Translate(Input.GetAxis("Horizontal") * fltSpeed, 0, Input.GetAxis("Vertical") * fltSpeed);
+
+        Vector3 moveDir = new Vector3(Input.GetAxis("Horizontal") * fltSpeed, 0, Input.GetAxis("Vertical") * fltSpeed);
+        rbPlayer.velocity = moveDir;
     }
 }
