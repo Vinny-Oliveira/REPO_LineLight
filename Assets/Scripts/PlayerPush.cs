@@ -18,8 +18,25 @@ public class PlayerPush : MonoBehaviour
             return;
         }
 
-        // 
-        Vector3 pushDir = new Vector3 (hit.moveDirection.x, 0, hit.moveDirection.z);
-        rbTouchingBody.velocity = pushDir * fltPushPower;
+        //if (Input.GetKeyDown(KeyCode.E)) {
+        //    Debug.Log("PRESSED E");
+        //    //GameObject box = hit.collider.gameObject;
+        //    FixedJoint boxJoint = hit.collider.gameObject.GetComponent<FixedJoint>();
+        //    boxJoint.connectedBody = gameObject.GetComponent<Rigidbody>(); // Attach the block to the player
+        //    //boxJoint.enableCollision = true;
+        //} else if (Input.GetKeyUp(KeyCode.E)) {
+        //    FixedJoint boxJoint = hit.collider.gameObject.GetComponent<FixedJoint>();
+        //    boxJoint.connectedBody = null;
+        //    //boxJoint.enableCollision = false;
+        //}
+
+        if (Input.GetKey(KeyCode.E)) {
+            // Make the hit object move in the direction of the player
+            Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+            //Vector3 pushDir = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, 0, gameObject.GetComponent<Rigidbody>().velocity.z);
+            //pushDir = pushDir.normalized;
+            rbTouchingBody.velocity = pushDir * fltPushPower;
+        }
+        
     }
 }

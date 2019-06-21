@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 96574895}
   - component: {fileID: 96574899}
   - component: {fileID: 96574900}
-  - component: {fileID: 96574901}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -242,20 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a903ec3cc54a14c84fbd603867f5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!138 &96574901
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96574894}
-  m_ConnectedBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!1 &337005890
 GameObject:
   m_ObjectHideFlags: 0
