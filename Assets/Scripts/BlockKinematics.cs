@@ -10,7 +10,7 @@ public class BlockKinematics : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("Player")) {
-            Debug.Log("Collided");
+            //Debug.Log("Collided");
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
@@ -21,7 +21,7 @@ public class BlockKinematics : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionExit(Collision collision) {
         if (collision.gameObject.CompareTag("Player")) {
-            Debug.Log("Separated");
+            //Debug.Log("Separated");
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
