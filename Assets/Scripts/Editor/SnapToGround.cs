@@ -16,7 +16,7 @@ public class SnapToGround : MonoBehaviour
             {
                 if (hit.collider.gameObject == transform.gameObject) { // Avoid collision with self
                     continue;
-                } else if (hit.collider.gameObject.transform.parent.gameObject == transform.gameObject) { // Avoid collision with children
+                } else if (hit.collider.gameObject.transform.parent == transform) { // Avoid collision with children
                     continue;
                 }
 
