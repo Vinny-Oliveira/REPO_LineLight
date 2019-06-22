@@ -11,6 +11,7 @@ public class PlayerPush : MonoBehaviour
     /// <param name="hit"></param>
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        Debug.Log("PRESSED E");
         Rigidbody rbTouchingBody = hit.collider.attachedRigidbody; // Rigidbody of the object the player hits
 
         // Do nothing if there is no Rigidbody or if the object is kinematic (may not be moved)
@@ -30,13 +31,13 @@ public class PlayerPush : MonoBehaviour
         //    //boxJoint.enableCollision = false;
         //}
 
-        if (Input.GetKey(KeyCode.E)) {
+        //if (Input.GetKey(KeyCode.E)) {
             // Make the hit object move in the direction of the player
             Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
             //Vector3 pushDir = new Vector3(gameObject.GetComponent<Rigidbody>().velocity.x, 0, gameObject.GetComponent<Rigidbody>().velocity.z);
             //pushDir = pushDir.normalized;
             rbTouchingBody.velocity = pushDir * fltPushPower;
-        }
+        //}
         
     }
 }
