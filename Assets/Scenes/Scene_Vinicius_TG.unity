@@ -1603,6 +1603,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207079455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &213790526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5982609643008449959, guid: 618918081a4659649ada8bfb84beb7e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5982609641979500175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &230611287
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,7 +5224,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.43e-43, y: 2.84e-43, z: 0, w: 4.48e-43}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -9994,7 +10000,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.3509887e-38, y: 0, z: 0, w: 2.3509887e-38}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 2.3509887e-38}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -11206,6 +11212,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523456695}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1527005863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8798733555286506767, guid: 9df884152037fef4d9cb9355d4cc81dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8798733556754196190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1542874519
 GameObject:
   m_ObjectHideFlags: 0
@@ -15578,7 +15590,7 @@ PrefabInstance:
     - target: {fileID: 2451613969728659742, guid: 77f2c685959a611488be180b39053226,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.5
+      value: 2.27
       objectReference: {fileID: 0}
     - target: {fileID: 2451613969728659742, guid: 77f2c685959a611488be180b39053226,
         type: 3}
@@ -15619,6 +15631,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451613969728659741, guid: 77f2c685959a611488be180b39053226,
+        type: 3}
+      propertyPath: sourceCube
+      value: 
+      objectReference: {fileID: 1527005863}
+    - target: {fileID: 2451613969728659741, guid: 77f2c685959a611488be180b39053226,
+        type: 3}
+      propertyPath: endCube
+      value: 
+      objectReference: {fileID: 213790526}
+    - target: {fileID: 2451613969728659741, guid: 77f2c685959a611488be180b39053226,
+        type: 3}
+      propertyPath: EPSILON
+      value: 1.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f2c685959a611488be180b39053226, type: 3}
